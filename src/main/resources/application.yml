@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: luckychowdary2002@gmail.com
+    password: krmy dofs edik xsxj
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+app:
+  admin-email: luckychowdary2002@gmail.com
