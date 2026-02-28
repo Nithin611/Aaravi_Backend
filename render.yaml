@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: aaravi-backend
-    env: java
-    rootDir: aaravi_backend
-    buildCommand: "./mvnw clean package -DskipTests"
-    startCommand: "java -jar target/*.jar"
-    plan: free

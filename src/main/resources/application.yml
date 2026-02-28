@@ -1,12 +1,12 @@
 server:
-  port: 8080
+  port: ${PORT:8080}
 
 spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: luckychowdary2002@gmail.com
-    password: krmy dofs edik xsxj
+    username: ${EMAIL_USERNAME}
+    password: ${EMAIL_PASSWORD}
     properties:
       mail:
         smtp:
@@ -15,4 +15,4 @@ spring:
             enable: true
 
 app:
-  admin-email: luckychowdary2002@gmail.com
+  admin-email: ${ADMIN_EMAIL}
