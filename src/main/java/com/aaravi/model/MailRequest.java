@@ -2,7 +2,7 @@ package com.aaravi.model;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.Pattern;
 import lombok.Data;
 
 @Data
@@ -19,7 +19,7 @@ public class MailRequest {
     private String email;
 
     @NotBlank(message = "Phone Number is required")
-    @Size(min = 10, max = 15, message = "Phone number must be between 10 and 15 digits")
+    @Pattern(regexp = "^[0-9]{10}$", message = "Phone number must be exactly 10 digits")
     private String phoneNumber;
 
     @NotBlank(message = "Service selection is required")
@@ -30,4 +30,33 @@ public class MailRequest {
 
     @NotBlank(message = "Message is required")
     private String message;
+
+    public String getFullName() {
+        return fullName;
+    }
+    
+    public String getCompanyName() {
+        return companyName;
+    }
+    
+    public String getEmail() {
+        return email;
+    }
+    
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+    
+    public String getService() {
+        return service;
+    }
+    
+    public String getSubService() {
+        return subService;
+    }
+    
+    public String getMessage() {
+        return message;
+    }
+    
 }

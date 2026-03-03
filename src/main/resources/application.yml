@@ -5,8 +5,8 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: ${EMAIL_USERNAME}
-    password: ${EMAIL_PASSWORD}
+    username: "luckychowdary2002@gmail.com"
+    password: "krmy dofs edik xsxj"
     properties:
       mail:
         smtp:
@@ -15,4 +15,4 @@ spring:
             enable: true
 
 app:
-  admin-email: ${ADMIN_EMAIL}
+  admin-email: "luckychowdary2002@gmail.com"
